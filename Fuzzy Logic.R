@@ -107,7 +107,7 @@ plot.kepribadian <- function(){
 library(qlcMatrix)
 library(plotly)
 
-data <- read.csv("E:/Matkul kuliah/Semester 6/AI/Tugas 3 AI/Fik/fik1/Dataset.csv")
+data <- read.csv("Dataset.csv")
 
 kompetensi.column <- c(data$Kompetensi)
 kepribadian.column <- c(data$Kepribadian)
@@ -135,7 +135,7 @@ result.diterima = result$diterima[21:30]
 result
 # result.diterima
 # View(result)
-write.csv(result.diterima,"E:/Matkul kuliah/Semester 6/AI/Tugas 3 AI/Fik/fik2/TebakanTugas3.csv")
+write.csv(result.diterima,"Prediction.csv")
 
 plot.kompetensi()
 plot.kepribadian()
